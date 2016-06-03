@@ -10,10 +10,16 @@ nav ul {
 nav ul li {
   padding-left: 25px;
   border-bottom: solid 1px;
+  position: relative;
+  z-index: 1;
 }
 
 nav ul li a {
   text-decoration: none;
+}
+
+nav ul li.active {
+  background-color: #FCFCFC;
 }
 
 /* Media Queries */
