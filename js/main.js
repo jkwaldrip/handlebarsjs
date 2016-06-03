@@ -8,7 +8,7 @@ $(document).ready(
 
     $('#content div.one-half').append(html);
 
-    var navTemplate = '<nav class="one-half column u-pull-right"><ul>' +
+    var navTemplate = '<nav class=""><ul>' +
         '<li><a href="{{home}}">Home</a></li>' +
         '<li><a href="{{about}}">About</a></li>' +
         '<li><a href="{{linkTwo}}">Link Two</a></li>' +
