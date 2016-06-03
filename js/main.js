@@ -7,5 +7,22 @@ $(document).ready(
     var html = templateScript(context);
 
     $('#content div.one-half').append(html);
+
+    var navTemplate = '<nav><ul>' +
+        '<li><a href="{{home}}">Home</a></li>' +
+        '<li><a href="{{linkTwo}}">Link One</a></li>' +
+        '<li><a href="{{linkTwo}}">Link Two</a></li>' +
+        '<li><a href="{{linkThree}}">Link Three</a></li>' +
+      '</ul></nav>';
+    var navContext = {
+      'home' : '/',
+      'linkOne' : '#',
+      'linkTwo' : '#',
+      'linkThree' : '#'
+    }
+    var navCompiled = Handlebars.compile(navTemplate);
+    var navHtml = navCompiled(navContext);
+
+    $('#navbar').append(navHtml);
   }
 );
