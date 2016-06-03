@@ -4205,10 +4205,6 @@ nav ul li a {
   text-decoration: none;
 }
 
-nav ul li.active {
-  background-color: #FCFCFC;
-}
-
 /* Media Queries */
 
 /* Larger than mobile */

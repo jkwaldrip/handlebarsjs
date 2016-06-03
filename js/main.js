@@ -24,5 +24,6 @@ $(document).ready(
     var navHtml = navCompiled(navContext);
 
     $('#navbar').append(navHtml);
+
   }
 );
